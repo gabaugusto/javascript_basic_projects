@@ -1,60 +1,73 @@
+* {
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.25;
+	color: #FFF;
+}
+
+body {
+	background: #26C281;
+	color: rgba(0, 0, 0, 0.45);
+}
+
 #container {
-
-width :375px;
-height:525px;
-margin-left:350px;
-margin-top:65px;
-background-color: yellow;
-padding-left: 30px;
+	margin: 1% auto 0;
+    width: 65%;
 }
 
-#cm {
-
-	width:150px;
-	height:25px;
-	margin-top: 30px;
+h1 {
+	padding-left: 15px;
+	padding-top: 25px;
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
 }
 
-#kg{
-    width:150px;
-	height:25px;
-	margin-top: 30px;
-}
-
-#weightguide {
-
-margin-left: 75px;
-margin-top: 50px;
-
-
+.info {
+    background: rgba(255,255,255,.09);
+    padding: 2%;
 }
 
 #result {
-
-	font-size:35px;
-	margin-left: 90px;
-	color:blue;
+    font-size: 35px;
+    text-align: center;
 }
 
-#submit{
+label {
+	margin: 3% 0 1%;
+    position: relative;
+    float: left;
+}
 
-	width:150px;
-	height:35px;
-	margin-left:90px;
-	margin-top: 25px;
-	border-radius: 5px;
+input,
+textarea,
+select {
+	line-height: 1.5;
+	font-size: 1.4em;
+	padding: 5px 10px;
+	border: 2px solid #FFF;
+	color: #fff;
+	display: block;
+	width: 100%;
+	background: transparent;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+#submit {
+	width: 150px;
+	height: 45px;
+	border-radius: 0px;
 	border-style: none;
-	background-color: blue;
-	color:#fff;
-	font-size:25px;
+	color: #26C281;
+	font-size: 25px;
+	margin: 5% auto;
+	background: #FFF;
+	cursor: pointer;
+	transition: all .6s ;
 }
-body {
 
-	background-color: #000;
-}
-
-h1{
-
-	padding-left:15px;
-	padding-top:25px;
+#submit:hover {
+	background: #26C281;
+	color: #FFF;	
 }
