@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Simple calculator</title>
-        <link rel="stylesheet" type="text/css" href="style.css">     
-    </head>
-    <body> 
-        <h1>Simple Calculator</h1>
-        
-        <form id="calform" name="cal">
-            <input name="display" id='display' class='display'>
-			<input type="button" class='number' value="1" onclick="cal.display.value+='1'">
-			<input type="button" class='number' value="2" onclick="cal.display.value+='2'">
-			<input type="button" class='number' value="3" onclick="cal.display.value+='3'">
-		    <input type="button" class='tool' value="+" onclick="cal.display.value+='+'">             
-			<input type="button" class='number' value="4" onclick="cal.display.value+='4'">
-			<input type="button" class='number' value="5" onclick="cal.display.value+='5'">
-			<input type="button" class='number' value="6" onclick="cal.display.value+='6'">
-            <input type="button" class='tool' value="-" onclick="cal.display.value+='-'"> 
-			<input type="button" class='number' value="7" onclick="cal.display.value+='7'">
-			<input type="button" class='number' value="8" onclick="cal.display.value+='8'">
-			<input type="button" class='number' value="9" onclick="cal.display.value+='9'">
-            <input type="button" class='tool' value="x" onclick="cal.display.value+='*'">
-            <input type="button" class='number' value="0" onclick="cal.display.value+='0'"> 
-			<input type="button" class='tool' value="C" onclick="cal.display.value=''">
-            <input type="button" class='tool' value="=" onclick="cal.display.value=eval(cal.display.value)">
-            <input type="button" class='tool' value ="&#247;" onclick="cal.display.value+='/'">                          
-        </form>       
-    </body>
+
+<head>
+    <title>Simple calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="Simple Calculator using eval">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+
+    <form id="calform" name="cal">
+        <input name="display" id='display' class='display'>
+        <input type="button" class='number' value="1" onclick="cal.display.value+='1'">
+        <input type="button" class='number' value="2" onclick="cal.display.value+='2'">
+        <input type="button" class='number' value="3" onclick="cal.display.value+='3'">
+        <input type="button" class='tool' value="+" onclick="cal.display.value+='+'">
+        <input type="button" class='number' value="4" onclick="cal.display.value+='4'">
+        <input type="button" class='number' value="5" onclick="cal.display.value+='5'">
+        <input type="button" class='number' value="6" onclick="cal.display.value+='6'">
+        <input type="button" class='tool' value="-" onclick="cal.display.value+='-'">
+        <input type="button" class='number' value="7" onclick="cal.display.value+='7'">
+        <input type="button" class='number' value="8" onclick="cal.display.value+='8'">
+        <input type="button" class='number' value="9" onclick="cal.display.value+='9'">
+        <input type="button" class='tool' value="x" onclick="cal.display.value+='*'">
+        <input type="button" class='number' value="0" onclick="cal.display.value+='0'">
+        <input type="button" class='tool' value="C" onclick="cal.display.value=''">
+        <input type="button" class='tool' value="=" onclick="cal.display.value=eval(cal.display.value)">
+        <input type="button" class='tool' value="&#247;" onclick="cal.display.value+='/'">
+    </form>
+</body>
+
 </html>

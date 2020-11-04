@@ -1,0 +1,150 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.25;
+    color: #FFF;
+    box-sizing: border-box;
+}
+
+body {
+	background: #fb887c;
+	color: rgba(24, 18, 18, 0.45);
+}
+
+h1 {
+	width: 100%;
+	font-size: 2em;
+	margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 2em;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    padding: 0 0 0 80px;
+    vertical-align: top;
+    color: rgba(0,0,0,0.2);
+    cursor: pointer;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+input[type=radio] {
+    border: 0px;
+    height: 2em;
+}
+
+
+ .quizContainer {
+    width: 90vw;
+    height: 90vh;
+    margin: 1vh auto;
+    box-sizing: border-box;
+}
+
+.nextButton {
+    max-width: 250px;
+	border-radius: 0px;
+    border-style: none;
+    padding: 1% 0;
+	color: #fb887c;
+	font-size: 25px;
+	margin: 5% auto;
+	border: 2px solid #FFF;
+	background: #FFF;
+	cursor: pointer;
+    transition: all .6s;
+    text-align: center;
+}
+
+.nextButton:hover {
+	background: #fb887c;
+	color: #FFF;
+}
+
+.question {
+    width: 90%;
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 2%;
+    text-align: center;
+    background: rgba(0,0,0,.05);
+    box-sizing: border-box;    
+}
+
+.quizMessage {
+    border-radius: 6px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 2px;
+    color: red;
+}
+
+
+.result {
+    font-size: 35px;
+	text-align: center;
+	padding: 3% 0;
+}
+
+
+/* QUIZ */
+.ac-custom label {
+	display: inline-block;
+	position: relative;
+	font-size: 2em;
+	padding: 0 0 0 80px;
+	vertical-align: top;
+	color: rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"],
+.ac-custom label::before {
+	width: 50px;
+	height: 50px;
+	top: 50%;
+	left: 0;
+	margin-top: -25px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"] {
+	opacity: 0;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+.ac-custom label::before {
+	content: '';
+	border: 4px solid #fff;
+	transition: opacity 0.3s;
+}
+
+.ac-custom input[type="checkbox"]:checked + label,
+.ac-custom input[type="radio"]:checked + label {
+	color: #fff;
+} 
+
+.ac-custom input[type="checkbox"]:checked + label::before,
+.ac-custom input[type="radio"]:checked + label::before {
+	opacity: 0.8;
+}

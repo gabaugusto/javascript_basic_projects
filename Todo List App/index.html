@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <title>Basic To Do App with Javascript</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
+	<meta name="description" content="Basic To Do App with Javascript">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-<div id ="wrapper">
-<h1> Todo List</h1>
-<input id="task"  ><button id="add">Add Task</button>
-<!--<hr>-->
-<div id="todos"></div>
- </div>
-<script src="myscript.js"></script>
+  <h1> Todo List</h1>
+  <div id="container" class='container'>
+    <header>
+      <input id="task" class='task'>
+      <button id="add" class='add'>+</button>
+    </header>
+    <hr>
+    <div id="todos" class='todos'></div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
- 
