@@ -9,7 +9,7 @@ These projects cover the very basics of Javascript. You could use them as you li
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-# [PT] Javascript: Basic Projects
+# [PT] Javascript:  Projetos básicos
 
 Projetos básicos em Javascript para utilizar em aula.
 
