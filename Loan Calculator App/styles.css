@@ -47,8 +47,8 @@ label {
 	float: left;
 }
 
-#payment {
-	font-size: 35px;
+.payment {
+	font-size: 25px;
 	text-align: center;
 	margin: 3%;
 }

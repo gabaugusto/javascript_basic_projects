@@ -17,9 +17,10 @@ h1{
 	width: 100%;
 	font-size: 2em;
 	text-align: center;
+	margin: 2% auto;
 }
 
-#clockdiv{
+.clocking{
 	font-family: sans-serif;
 	color: #fff;
 	display: inline-block;
@@ -28,13 +29,13 @@ h1{
 	font-size: 55px;
 }
 
-#clockdiv > div{
+.clocking > div{
 	padding: 50px;
 	display: inline-block;
 }
 
-#clockdiv div > span{
-	padding: 65px;
+.clocking div > span{
+	padding: 65px 65px 0;
 	border-radius: 3px;
 	display: inline-block;
 }

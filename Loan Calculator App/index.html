@@ -2,34 +2,36 @@
 
 <html>
 
-	<head>
+<head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Animated Checkboxes and Radio Buttons with SVG: Using SVG for adding some fancy 'check' animations to form inputs" />
+	<meta name="description"
+		content="Animated Checkboxes and Radio Buttons with SVG: Using SVG for adding some fancy 'check' animations to form inputs" />
 	<title>Loan Calculator</title>
-	<script src="js/modernizr.custom.js"></script>	
-	<link rel ="stylesheet" type="text/css" href="styles.css">
-	</head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 
-	<body>
+<body>
 
-		<div id ="loancal">
-			<h1> Loan Calculator</h1>
-			<label for='amount'>Loan Amount:</label>
-			<p><input id="amount" type="number" min="1" max="5000000" name='amount' onchange="computeLoan()"></p>
+	<div id="loancal">
+		<h1> Loan Calculator</h1>
+		<label for='amount'>Loan Amount:</label>
+		<p><input id="amount" type="number" min="1" max="5000000" name='amount' onchange="computeLoan()"></p>
 
-			<label for='interest_rate'>Interest Rate (%):</label>
-			<input id="interest_rate" name='interest_rate' type="number" min="0" max="100" value="10" step=".1" onchange="computeLoan()"></p>
+		<label for='interest_rate'>Interest Rate (%):</label>
+		<input id="interest_rate" name='interest_rate' type="number" min="0" max="100" value="10" step=".1"
+			onchange="computeLoan()"></p>
 
-			<label for='months'>Months To Pay:</label>
-			<p> <input id="months" name='months' type="number" min="1" max="300" value="1" step="1" onchange="computeLoan()"></p>
+		<label for='months'>Months To Pay:</label>
+		<p> <input id="months" name='months' type="number" min="1" max="300" value="1" step="1"
+				onchange="computeLoan()"></p>
 
-			<h2 id="payment"></h2>
-	   </div>
+		<h2 id="payment" class='payment'></h2>
+	</div>
 
-		<script src ="loancalculator.js"> </script>
+	<script src="loancalculator.js"> </script>
 
-	</body>
+</body>
 
 </html>

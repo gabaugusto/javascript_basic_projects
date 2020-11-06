@@ -5,7 +5,7 @@
 	font-size: 100%;
 	line-height: 1.25;
 	color: #FFF;
-    box-sizing: border-box;	
+	box-sizing: border-box;
 }
 
 body {
@@ -18,10 +18,18 @@ body {
 	width: 65%;
 }
 
+@media (max-width: 600px) {
+	.container {
+		margin: 5% auto 0;
+		width: 75%;
+	}
+}
+
 h1 {
 	width: 100%;
 	font-size: 2em;
 	text-align: center;
+	margin: 2% auto;
 }
 
 .info {

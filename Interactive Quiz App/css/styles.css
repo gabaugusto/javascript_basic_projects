@@ -43,7 +43,7 @@ label {
 
 input[type=radio] {
     border: 0px;
-    height: 2em;
+    height: 1em;
 }
 
 
@@ -93,20 +93,18 @@ input[type=radio] {
     color: red;
 }
 
-
 .result {
     font-size: 35px;
 	text-align: center;
 	padding: 3% 0;
 }
 
-
 /* QUIZ */
 .ac-custom label {
 	display: inline-block;
 	position: relative;
-	font-size: 2em;
-	padding: 0 0 0 80px;
+	font-size: 1em;
+	padding:0 0 0 50px;
 	vertical-align: top;
 	color: rgba(0,0,0,0.2);
 	cursor: pointer;
@@ -116,13 +114,13 @@ input[type=radio] {
 .ac-custom input[type="checkbox"],
 .ac-custom input[type="radio"],
 .ac-custom label::before {
-	width: 50px;
-	height: 50px;
-	top: 50%;
-	left: 0;
-	margin-top: -25px;
-	position: absolute;
-	cursor: pointer;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 0;
+    margin-top: -17px;
+    position: absolute;
+    cursor: pointer;
 }
 
 .ac-custom input[type="checkbox"],

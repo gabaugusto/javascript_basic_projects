@@ -38,4 +38,4 @@ function initializeClock(id, endtime) {
 }
 
 var deadline = new Date(Date.parse(new Date()) + 14 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
+initializeClock('clocking', deadline);

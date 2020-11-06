@@ -67,6 +67,7 @@ header{
     border-style: none;
 	text-align: center;
 	cursor: pointer;
+	outline: 0;
 }
 
 .todos {
@@ -83,5 +84,8 @@ header{
 }
 
 .todos ul li {
-	margin: 10% 0 0;
+    margin: 1% 0 0;
+    border: 1px solid #FFF;
+    padding: 1%;
+    height: 37px;
 }
