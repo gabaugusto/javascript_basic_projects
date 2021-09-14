@@ -1,0 +1,74 @@
+<html>
+
+<head>
+
+<script>
+
+ var saldo = 100.0;
+
+function ver_saldo() {
+	alert('Seu saldo atual é: ' + saldo);
+	atm();
+}
+
+function fazer_deposito() {
+	var deposito = parseFloat(prompt('Qual o valor para depósito?'));
+	if (isNaN(deposito) || deposito === '') {
+		alert('Por favor, informe um número:');
+		fazer_deposito();
+	} else {
+		saldo += deposito;
+		ver_saldo();
+	}
+}
+
+	function fazer_saque() {
+		var saque = parseFloat(prompt('Qual o valor para saque?'));
+		if (isNaN(saque) || saque === '') {
+			alert('Por favor, informe um número:');
+			fazer_saque();
+		} else {
+			saldo -= saque;
+			ver_saldo();
+		}
+	}
+
+	function erro() {
+		alert('Por favor, informe um número entre 1 e 4');
+		atm();
+	}
+
+	function sair() {
+		var confirm_leave = confirm('Você deseja sair?');
+		if (confirm_leave) {
+			window.close();
+		} else {
+			atm();
+		}
+	}
+
+	function inicio() {
+
+		var choice = parseInt(prompt('Selecione uma opção 1.) Saldo 2.) Depósito 3.) Saque 4.) Sair')); 
+
+		if (choice === 1) {
+			ver_saldo();
+		} else if (choice === 2) {
+			fazer_deposito();
+		} else if (choice === 3) {
+			fazer_saque();
+		} else if (choice === 4) {
+			sair();
+		} else {
+			erro();
+		}
+	}
+
+	inicio();
+	
+	</script>
+	</head>
+	<body>
+	
+	</body>
+	</html>
