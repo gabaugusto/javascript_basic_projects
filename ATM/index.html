@@ -2,73 +2,77 @@
 
 <head>
 
-<script>
+	<script>
+		var saldo = 100.5; //Float 1.36
 
- var saldo = 100.0;
+		function inicio() {
 
-function ver_saldo() {
-	alert('Seu saldo atual é: ' + saldo);
-	atm();
-}
+			var escolha = parseInt(prompt('Selecione uma opção 1.) Saldo 2.) Depósito 3.) Saque 4.) Sair'));
 
-function fazer_deposito() {
-	var deposito = parseFloat(prompt('Qual o valor para depósito?'));
-	if (isNaN(deposito) || deposito === '') {
-		alert('Por favor, informe um número:');
-		fazer_deposito();
-	} else {
-		saldo += deposito;
-		ver_saldo();
-	}
-}
+			if (escolha === 1) {
+				ver_saldo();
+			} else if (escolha === 2) {
+				fazer_deposito();
+			} else if (escolha === 3) {
+				fazer_saque();
+			} else if (escolha === 4) {
+				sair();
+			} else {
+				erro();
+			}
+		}		
 
-	function fazer_saque() {
-		var saque = parseFloat(prompt('Qual o valor para saque?'));
-		if (isNaN(saque) || saque === '') {
-			alert('Por favor, informe um número:');
-			fazer_saque();
-		} else {
-			saldo -= saque;
-			ver_saldo();
+		function ver_saldo() {
+			alert('Seu saldo atual é: ' + saldo);
+			inicio();
 		}
-	}
 
-	function erro() {
-		alert('Por favor, informe um número entre 1 e 4');
-		atm();
-	}
-
-	function sair() {
-		var confirm_leave = confirm('Você deseja sair?');
-		if (confirm_leave) {
-			window.close();
-		} else {
-			atm();
+		function fazer_deposito() {
+			var deposito = parseFloat(prompt('Qual o valor para depósito?'));
+			// Not a Number
+			if (isNaN(deposito) || deposito === '') {
+				alert('Por favor, informe um número:');
+				fazer_deposito();
+			} else {
+				saldo += deposito;
+				ver_saldo();
+			}
 		}
-	}
 
-	function inicio() {
-
-		var choice = parseInt(prompt('Selecione uma opção 1.) Saldo 2.) Depósito 3.) Saque 4.) Sair')); 
-
-		if (choice === 1) {
-			ver_saldo();
-		} else if (choice === 2) {
-			fazer_deposito();
-		} else if (choice === 3) {
-			fazer_saque();
-		} else if (choice === 4) {
-			sair();
-		} else {
-			erro();
+		function fazer_saque() {
+			var saque = parseFloat(prompt('Qual o valor para saque?'));
+			if (isNaN(saque) || saque === '') {
+				alert('Por favor, informe um número:');
+				fazer_saque();
+			} else {
+				saldo -= saque;
+				
+				ver_saldo();
+			}
 		}
-	}
 
-	inicio();
-	
+		function erro() {
+			alert('Por favor, informe um número entre 1 e 4');
+			inicio();
+		}
+
+		function sair() {
+			var confirma = confirm('Você deseja sair?');
+			if (confirma) {
+				window.close();
+			} else {
+				inicio();
+			}
+		}
+
+		
+		
+		inicio();
 	</script>
-	</head>
-	<body>
-	
-	</body>
-	</html>
+</head>
+
+<body>
+
+</body>
+
+</html>
